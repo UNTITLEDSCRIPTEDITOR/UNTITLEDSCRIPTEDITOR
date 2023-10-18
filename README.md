@@ -1,15 +1,20 @@
-- local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-- local Window = Library.CreateLib("UNTITLED SCRIPT EXECUTEOR", "DarkTheme")
-- 
-- local Tab 1 = Window:NewTab("Main")
-- local Tab 1 Section = Tab:NewSection("Main")
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Executor B", "Midnight")
 
-  
-  Section:NewSlider("SliderText", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+-- Tabs
+local Tab1 = Window:NewTab("Scripts")
+local Tab2 = Window:NewTab("Script Hub")
+-- Sections in Tabs
+local Section = Tab:NewSection("Welcome! Executer A v1.0")
+
+-- Buttons
+Tab1Section:NewButton("Hoho Hub Blox Fruits", "Exploit Blox fruits", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
-- 
-- Section:NewButton("BLOX FRUIT SCRIPT", "SCRIPT", function()
-    print("loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Script"))()")
+
+-- Tab2
+Tab2Section:NewButton("Arceus X 3.0","Troll", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 end)
+
 
